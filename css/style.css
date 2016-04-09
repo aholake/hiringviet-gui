@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #8a8a8a;
+}
+
+#home-body {
+	background: url("../images/big_bg.jpg");
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+}
+
+.logo {
+	margin-bottom: 70px;
+}
+
+header {
+	width: 100%;
+	height: 110px;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+header #topnav {
+	width: 1060px;
+	height: 100%;
+	margin: auto;
+}
+
+#search-bar {
+	margin-top:25px;
+	width: 500px;
+}
+
+#search-input {
+	width: 355px;
+}
+
+.circle-btn {
+	width: 60px;
+	height: 60px;
+	margin: 0 5px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 30px;
+	font-size: 33px;
+	padding-left: 9px;
+	padding-top: 7px;
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+}
+.circle-btn>i.material-icons {
+	font-size: 45px;
+}
+
+.search-hint {
+	font-size: 13px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.menu-group {
+	display: inline-block;
+	position: absolute;
+}
+
+.menu-group .dropdown-menu {
+	position: relative;
+	width: 200px;
+	min-height: 50px;
+	margin: 8px 5px;
+	clear: both;
+	background: #FFF;
+}
