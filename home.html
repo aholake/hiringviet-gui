@@ -20,8 +20,10 @@
 
 	<!--custom js-->
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
 </head>
-<body>
+<body onclick="onClickToBody()">
 	<header>
 		<div id="topnav">
 			<div class="left">
@@ -30,8 +32,17 @@
 			<div class="right">
 				<div id="search-bar">
 					<div id="search-input" class="left">
-						<input type="text" placeholder="Tìm kiếm công việc, công ty, người dùng,...">
+						<input type="text" id="search-auto-complete" placeholder="Tìm kiếm công việc, công ty, người dùng,...">
 						<p class="search-hint">Từ khóa: Thông dịch viên, lập trình Java, lập trình PHP...</p>
+						<div id="suggestion-box" class="z-depth-1">
+							<div class="search-progress">
+								<img src="images/loading.gif" />
+								<p>Đang tìm kiếm kết quả</p>
+							</div>
+							<ul class="wrap-search-results">
+								
+							</ul>
+						</div>
 					</div>
 					<a id="search-btn" class="circle-btn left blue lighten-2 noselect">
 						<i class="material-icons white-text">search</i>
@@ -41,8 +52,21 @@
 						<a id="menu-btn" class="circle-btn red lighten-2 noselect">
 							<i class="material-icons white-text">menu</i>
 						</a>
-						<div class="dropdown-menu z-depth-1">
-
+						<div id="dropdown-menu" class="z-depth-1">
+							<div>
+								<div id="profile">
+									<img src="images/profile_photo.jpg" class="circle profile-photo">
+									<h5><a href="#">Võ Tấn Lộc</a></h5>
+									<h6><a href="#">Thêm kỹ năng</a></h6>
+								</div>
+							</div>
+							<ul>
+								<li><i class="material-icons">assignment_ind</i>Hồ sơ của tối</li>
+								<li><i class="material-icons">assignment_ind</i>Hồ sơ của tối</li>
+								<li><i class="material-icons">assignment_ind</i>Hồ sơ của tối</li>
+								<li><i class="material-icons">assignment_ind</i>Hồ sơ của tối</li>
+								<li><i class="material-icons">assignment_ind</i>Hồ sơ của tối</li>
+							</ul>
 						</div>
 					</div>
 				</div>

@@ -35,6 +35,50 @@ header #topnav {
 
 #search-input {
 	width: 355px;
+	position: relative;
+}
+
+#suggestion-box {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	background: #FFF;
+	top: 49px;
+	overflow: auto;
+}
+#suggestion-box ul {
+	display: none;
+}
+
+#suggestion-box li {
+	height: 40px;
+	line-height: 40px;
+	p
+	adding: 0 5px;
+}
+#suggestion-box li:hover {
+	background: #c2c2c2;
+}
+
+#suggestion-box>.search-progress {
+	display: -webkit-box;
+	display: -moz-inline-box;
+	display: -webkit-inline-box;
+	display: inline-box;
+}
+
+#suggestion-box>.search-progress>img {
+	width: 30px;
+	height: 30px;
+	margin: 5px 10px; 
+}
+
+#suggestion-box>.search-progress>p {
+	width: 200px;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: bold;
 }
 
 .circle-btn {
@@ -60,25 +104,46 @@ header #topnav {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* IE/Edge */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
   user-select: none;           /* non-prefixed version, currently
-                                  not supported by any browser */
+  not supported by any browser */
 }
 
 .menu-group {
 	display: inline-block;
-	position: absolute;
+	position: relative;
 }
 
-.menu-group .dropdown-menu {
-	position: relative;
-	width: 200px;
+#dropdown-menu {
+	position: absolute;
+	width: 300px;
+	top: 64px;
+	left: -245px;
 	min-height: 50px;
 	margin: 8px 5px;
 	clear: both;
 	background: #FFF;
+	display: none;
 }
+#profile {
+	text-align: center;
+	padding-top: 8px;
+}
+#profile .profile-photo {
+	height: 150px;
+	width: 150px;
+}
+#dropdown-menu li {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 3px;
+}
+
+
+#dropdown-menu li:hover {
+	background: #c2c2c2;
+};
