@@ -128,6 +128,7 @@ header #topnav {
 	clear: both;
 	background: #FFF;
 	display: none;
+	z-index: 999;
 }
 #profile {
 	text-align: center;
@@ -137,13 +138,69 @@ header #topnav {
 	height: 150px;
 	width: 150px;
 }
-#dropdown-menu li {
-	height: 40px;
+
+.menu-item a{
+	color: #8a8a8a;
+}
+
+.menu-item-header {
+	line-height: 40px;
+	border-bottom: #c2c2c2 1px solid;
+	position: relative;
+}
+.menu-item-header a {
+	display: block;
+}
+
+.menu-item-header .noti-count {
+	position: absolute;
+	right: 5px;
+	top: 4px;
+}
+.menu-item-header:hover {
+	background: #64B5F6;
+}
+
+.menu-item-body {
+	display: none;
+}
+
+.menu-item-body ul{
+	background: #d6d6d6;
+}
+
+.menu-item-body ul li {
+	padding-left: 30px;
+}
+.menu-item-body ul li {
+	line-height: 35px;
+}
+.menu-item-body ul li:hover {
+	background: #c2c2c2;
+}
+
+/*
+#dropdown-menu>ul>li {
+	min-height: 40px;
 	line-height: 40px;
 	padding: 0 3px;
 }
 
-
 #dropdown-menu li:hover {
 	background: #c2c2c2;
 };
+*/
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.menu-item-body {
+	background: #FFF;
+}
+
+.margin-right-5 {
+	margin-right: 5px;
+}
