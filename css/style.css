@@ -47,6 +47,7 @@ header #topnav {
 	background: #FFF;
 	top: 49px;
 	overflow: auto;
+	z-index: 4;
 }
 #suggestion-box ul {
 	display: none;
@@ -149,8 +150,14 @@ header #topnav {
 	border-bottom: #c2c2c2 1px solid;
 	position: relative;
 }
+
 .menu-item-header a {
-	display: block;
+	display: inline-flex;
+	width: 100%;
+}
+
+.item-icon {
+	padding-top: 6px;
 }
 
 .menu-item-header .noti-count {

@@ -1,0 +1,236 @@
+<html>
+<head>
+	<title>Company</title>
+
+	<meta charset="utf-8">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<!--Custom Style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-ta.css">
+
+	<!--custom js-->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/company/company.js"></script>
+
+	<!--JCarousel -->
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+	<!--Scroll to Fixed-->
+	<script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+</head>
+<body onclick="onClickToBody()">
+	<header>
+		<div id="topnav">
+			<div class="left">
+				<img src="images/small_logo.png">
+			</div>
+			<div class="right">
+				<div id="search-bar">
+					<div id="search-input" class="left">
+						<input type="text" id="search-auto-complete" placeholder="Tìm kiếm công việc, công ty, người dùng,...">
+						<p class="search-hint">Từ khóa: Thông dịch viên, lập trình Java, lập trình PHP...</p>
+						<div id="suggestion-box" class="z-depth-1">
+							<div class="search-progress">
+								<img src="images/loading.gif" />
+								<p>Đang tìm kiếm kết quả</p>
+							</div>
+							<ul class="wrap-search-results">
+								
+							</ul>
+						</div>
+					</div>
+					<a id="search-btn" class="circle-btn left blue lighten-2 noselect">
+						<i class="material-icons white-text">search</i>
+					</a>
+
+					<div class="menu-group">
+						<a id="menu-btn" class="circle-btn red lighten-2 noselect">
+							<i class="material-icons white-text">menu</i>
+						</a>
+						<div id="dropdown-menu" class="z-depth-1">
+							<div>
+								<div id="profile">
+									<img src="images/profile_photo.jpg" class="circle profile-photo">
+									<h5><a href="#">Võ Tấn Lộc</a></h5>
+									<h6><a href="#">Thêm kỹ năng</a></h6>
+								</div>
+							</div>
+							<ul class="menu-item">
+								<li>
+									<div class="menu-item-header">
+										<a href="#">
+											<div class="item-icon"><i class="material-icons margin-right-5">account_box</i></div>
+											<div>Hồ sơ cá nhân</div>
+										</a>
+									</div>
+									<div class="menu-item-body">
+										<ul>
+											<li><a href="#">Chỉnh sửa hồ sơ</a></li>
+											<li><a href="#">Người xem hồ sơ</a></li>
+											<li><a href="#">Nhật ký hoạt động</a></li>
+											<li><a href="#">Hòm thư</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header">
+										<a href="#">
+											<div class="item-icon"><i class="material-icons margin-right-5">add_alert</i></div>
+											<div>Thông báo</div>
+										</a>
+										<div class="chip red lighten-2 white-text noti-count">5</div>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header">
+										<a href="#">
+											<div class="item-icon"><i class="material-icons margin-right-5">donut_large</i></div>
+											<div>Theo dõi</div>
+										</a>
+									</div>
+									<div class="menu-item-body">
+										<ul>
+											<li><a href="#">Người đang theo dõi</a></li>
+											<li><a href="#">Công ty đang theo dõi</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header">
+										<a href="#">
+											<div class="item-icon"><i class="material-icons margin-right-5">bookmark</i></div>
+											<div>Quản lý nghề nghiệp</div>
+										</a>
+									</div>
+									<div class="menu-item-body">
+										<ul>
+											<li><a href="#">Công việc đã lưu</a></li>
+											<li><a href="#">Công việc đề xuất</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header">
+										<a href="#">
+											<div class="item-icon"><i class="material-icons margin-right-5">account_circle</i></div>
+											<div>Tài khoản</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header">
+										<a href="#">
+											<div class="item-icon"><i class="material-icons margin-right-5">exit_to_app</i></div>
+											<div>Thoát</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container margin-top-5">
+		<div class="row">
+			<div class="col m12 company-header">
+				<div class="cover-image">
+					<img class="img-full" src="images/cover-images/cover-image.jpg">
+					<div class="update-cover-image">
+						<div class="item-icon"><i class="material-icons">photo_camera</i></div>
+						<span>Cập nhật ảnh bìa</span>
+					</div>
+				</div>
+				<div class="avatar-image">
+					<div class="wrap-relative">
+						<img class="img-full" src="images/avatar-images/avatar.png">
+						<div class="update-avatar-image">
+							<div class="item-icon"><i class="material-icons">photo_camera</i></div>
+							<span>Cập nhật ảnh đại diện</span>
+						</div>
+					</div>
+				</div>
+				<div class="company-name">
+					<h4>Compane Name</h4>
+				</div>
+			</div>
+			<div class="col m12 company-menu">
+				<div class="action">
+					<div class="action-item"></div>
+					<div class="action-item"></div>
+				</div>
+				<div class="wrap-menu-item z-depth-1">
+					<ul class="inline-flex">
+						<li class="current-item"><a href="company.html">Home</a></li>
+						<li><a href="company-career.html">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col m12 company-content">
+				<div class="col m9 card-panel company-content-left">
+					<div class="col m12">
+						<div class="col m10 padding-0">
+							<h5>Compane Name</h5>
+							<div class="company-infor">
+								<ul class="inline-flex">
+									<li><i class="material-icons">people</i></li>
+									<li>Medium: 100-200</li>
+								</ul>
+								<ul class="inline-flex">
+									<li><i class="material-icons">people</i></li>
+									<li>Medium: 100-200</li>
+								</ul>
+								<ul class="inline-flex">
+									<li><i class="material-icons">people</i></li>
+									<li>Medium: 100-200</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col m2">
+							####
+						</div>
+					</div>
+					<div class="col m12">
+						<h5>Công ty 100% vốn Nhật Bản chuyên cung cấp giải pháp gia công phần mềm tiêu chuẩn quốc tế.</h5>
+						<p>Được thành lập vào năm 2006 với 100% vốn Nhật Bản, JV-IT là công ty cung cấp giải pháp gia công phần mềm tiêu chuẩn quốc tế. JV-IT chuyên cung cấp các dịch vụ phát triển website, các sản phẩm công nghệ tin học, phát triển game… cho thị trường Nhật Bản. Sau hơn 7 năm hoạt động, trở thành một trong những thương hiệu hàng đầu của Việt Nam và vươn tầm quốc tế, chúng tôi ý thức được rằng phải chú trọng xây dựng bền vững dựa trên nền tảng con người. JV-IT là nơi khẳng định tài năng, ươm mầm sáng tạo, không có ý tưởng nào với chúng tôi là nhỏ bé, chúng tôi tôn vinh và tạo điều kiện để bạn biến nó thành hiện thực.</p>
+						<h5>Tech Stack</h5>
+						<div class="row">
+							<span class="col m8">
+								<a href="#" class="chip">Java</a>
+								<a href="#" class="chip">English</a>
+								<a href="#" class="chip">MySQL</a>
+								<a href="#" class="chip">HTML</a>
+								<a href="#" class="chip">CSS</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col m3 padding-right-0">
+					<div id="top-company" class="card-panel center">
+						<h5>Nhà Tuyển Dụng</h5>
+						<img src="images/carousel/1.png" class="company-logo responsive-img">
+						<img src="images/carousel/2.png" class="company-logo responsive-img">
+						<img src="images/carousel/3.png" class="company-logo responsive-img">
+						<img src="images/carousel/4.png" class="company-logo responsive-img">
+						<img src="images/carousel/6.png" class="company-logo responsive-img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
