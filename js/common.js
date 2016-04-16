@@ -4,8 +4,9 @@ function onClickToBody() {
 	$('#suggestion-box').hide();
 }
 
-/* Enable Carousel */
+
 $(function() {
-	$('.carousel').carousel();
+	$('.carousel').carousel();/* Enable Carousel */
+	$("#top-company").scrollToFixed();
 });
 
