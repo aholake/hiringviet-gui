@@ -8,6 +8,14 @@
 	position: relative;
 }
 
+.chip-hover {
+	border: 2px solid #e9e9e9;
+}
+
+.chip-hover:hover {
+	border: 2px solid #1cc117;
+}
+
 .padding-right-0 {
 	padding-right: 0 !important;
 }
@@ -70,6 +78,7 @@
 	padding: 2px;
 	background: #fff;
 	z-index: 2;
+	cursor: pointer;
 }
 
 .company-header .avatar-image .update-avatar-image {
