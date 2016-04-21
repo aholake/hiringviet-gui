@@ -1,4 +1,12 @@
 
+.color-white {
+	color: #fff;
+}
+
+.color-black {
+	color: #000;
+}
+
 .img-full {
 	width: 100%;
 	height: 100%;
@@ -16,6 +24,11 @@
 	border: 2px solid #1cc117;
 }
 
+.p-m-0 {
+	margin: 0;
+	padding: 0;
+}
+
 .padding-right-0 {
 	padding-right: 0 !important;
 }
@@ -27,13 +40,41 @@
 .margin-top-5 {
 	margin-top: 5px;
 }
+.margin-tb-2 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
 .inline-flex {
 	display: inline-flex;
 }
 
+.display-inline-box {
+	display: -webkit-inline-box;
+	display: inline-box;
+
+}
+
+.edit-field-icon {
+	display: none;
+	position: relative;
+	width: 34px;
+	height: 34px;
+	margin: 0 5px;
+	text-align: center;
+	padding: 5px 0;
+	background: #DDDDDD;
+}
+
+.bg-edit {
+	background: #DDDDDD;
+}
+
+/* End css common */
+
 .company-header {
 	position: relative;
+	color: #000;
 }
 
 .company-header .cover-image {
@@ -46,6 +87,16 @@
 	background: #fff;
 }
 
+.company-header .cover-image .box-shadow-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset 17px -122px 204px 3px rgba(0,0,0,0.98);
+	-moz-box-shadow: inset 17px -122px 204px 3px rgba(0,0,0,0.98);
+	box-shadow: inset 17px -122px 204px 3px rgba(0,0,0,0.98);
+}
 
 .company-header .cover-image .update-cover-image {
 	position: absolute;
@@ -98,15 +149,19 @@
 	color: #eeeeee;
 }
 
-.company-header .company-name {
+.company-header .company-name, .company-header .profile-infor-header {
 	position: absolute;
 	bottom: 0px;
 	left: 190px;
+	max-width: 500px;
 	cursor: pointer;
 }
 
-.company-header .company-name h4 {
-	color: #fff;
+.company-header .profile-infor-header h5, .company-header .profile-infor-header h4 {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 900;
 }
 
 .company-menu {
@@ -160,4 +215,47 @@
 .company-content .company-content-left .company-infor {
 	display: inline-block;
 }
+
+/* begin skill endorse */
+.endorse-item {
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+
+}
+
+.endorse-item .skill-pill {
+	display: block;
+	overflow: auto;
+}
+.endorse-item .skill-pill .endorse-count {
+	padding: 5px;
+	background: #1ba8e5;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.endorse-item .skill-pill .endorse-count .num-endorsements {
+	text-align: center;
+	color: white;
+}
+
+.endorse-item .skill-pill .endorse-item-name-text {
+	background: #e5e5e5;
+	padding: 5px;
+	-webkit-border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+/* end skill endorse */
 
