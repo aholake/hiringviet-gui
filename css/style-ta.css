@@ -1,10 +1,20 @@
+i {
+	margin-top: 3px;
+}
 
+.width-x1 {
+	width: 100%;
+}
 .color-white {
 	color: #fff;
 }
 
 .color-black {
 	color: #000;
+}
+
+.color-blue {
+	color: #1ba8e5;
 }
 
 .img-full {
@@ -220,42 +230,96 @@
 .endorse-item {
 	height: 30px;
 	line-height: 30px;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+	margin-top: 5px;
+	position: relative;
+}
+
+.skill-pill {
+	display: block;
+	overflow: auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #1ba8e5;
+}
+
+.skill-pill .endorse-count {
+	padding: 5px;
+	background: #1ba8e5;
+}
+
+.skill-pill .endorse-count .num-endorsements {
+	text-align: center;
+	color: white;
+	padding-left: 5px;
+}
+
+.skill-pill .endorse-item-name-text {
+	display: inline-flex;
+	padding: 0px 10px;
+	background: #fff;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+	box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+}
+.endorse-item .endorsing {
+	margin-left: 5px;
+}
+
+.endorse-item .endorsing span {
+	overflow: auto;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+	cursor: pointer;
+	padding: 0 5px;
+	border: 1px solid #fff;
+	display: none;
+}
+
+.endorse-item .endorsing span:hover {
+	border: 1px solid #CCCCCC;
+	border-style: dotted;
+}
+.endorse-item .endorsers-container {
+	position: absolute;
+	right: 0;
+	height: 30px;
+	line-height: 30px;
+}
+.endorse-item .endorsers-container .endorsers-pics {
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+}
+.endorse-item .endorsers-container .endorsers-action span {
+	display: block;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.endorse-item .endorsers-container .endorsers-pics li {
+	margin-left: 2px;
+}
+.endorse-item .endorsers-container .endorsers-pics img {
+	width: 30px;
+	height: 30px;
+}
+
+.compact-view {
 	width: 100%;
 	display: -webkit-inline-box;
 	display: -moz-inline-box;
 	display: inline-box;
-
 }
 
-.endorse-item .skill-pill {
-	display: block;
-	overflow: auto;
-}
-.endorse-item .skill-pill .endorse-count {
-	padding: 5px;
-	background: #1ba8e5;
-	-webkit-border-top-left-radius: 2px;
-	-webkit-border-bottom-left-radius: 2px;
-	-moz-border-radius-topleft: 2px;
-	-moz-border-radius-bottomleft: 2px;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-}
-
-.endorse-item .skill-pill .endorse-count .num-endorsements {
-	text-align: center;
-	color: white;
-}
-
-.endorse-item .skill-pill .endorse-item-name-text {
-	background: #e5e5e5;
-	padding: 5px;
-	-webkit-border-top-right-radius: 2px;
-	-webkit-border-bottom-right-radius: 2px;
-	-moz-border-radius-topright: 2px;
-	-moz-border-radius-bottomright: 2px;
-	border-top-right-radius: 2px;
-	border-bottom-right-radius: 2px;
+.compact-view li {
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
 }
 /* end skill endorse */
 
