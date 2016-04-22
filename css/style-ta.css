@@ -61,6 +61,7 @@ i {
 
 .display-inline-box {
 	display: -webkit-inline-box;
+	display: -moz-inline-box;
 	display: inline-box;
 
 }
@@ -243,7 +244,7 @@ i {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: #1ba8e5;
+	/*background: #1ba8e5;*/
 }
 
 .skill-pill .endorse-count {
@@ -320,6 +321,22 @@ i {
 	display: -webkit-inline-box;
 	display: -moz-inline-box;
 	display: inline-box;
+}
+
+.endorsers-avatar {
+	position: relative;
+    -webkit-animation: mymove 1s 1; /* Chrome, Safari, Opera */
+    animation: mymove 1s 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: -20px;}
+    to {left: 0px;}
+}
+
+@keyframes mymove {
+    from {left: -20px;}
+    to {left: 0px;}
 }
 /* end skill endorse */
 

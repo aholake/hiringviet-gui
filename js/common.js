@@ -1,4 +1,7 @@
 
+var MAX_TOTAL_ITEM_7 = 7;
+
+
 /* Close all dialog and navbar */
 function onClickToBody() {
 	$('#suggestion-box').hide();

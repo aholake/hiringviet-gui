@@ -35,9 +35,23 @@ function profileOnClick() {
 	/* End Endorse */
 }
 
-function generaterClickEndorse(idParent, classCurrent, classTarget){
-	$('#' + idParent).find('.' + classTarget).css('display', 'inline-flex');
-	$('#' + idParent).find('.' + classCurrent).hide();
+function generaterClickEndorse(idParent, classCurrent, classTarget, index){
+	$('#' + idParent + index).find('.' + classTarget).css('display', 'inline-flex');
+	$('#' + idParent + index).find('.' + classCurrent).hide();
+
+	if(classCurrent === 'endorse-plus') {
+		var totalIem = $('#endorsers-pics-' + index).find('li').length;
+		if (totalIem <= MAX_TOTAL_ITEM_7) {
+			var html = '<li>' 
+			+ '<span>' 
+			+ '<img class="endorsers-avatar" src="images/avatar-images/avatar.png">'
+			+ '</span>'
+			+ '</li>';
+			$('#endorsers-pics-' + index).prepend(html);
+		}
+	} else {
+		$('#endorsers-pics-' + index + ' li').first().remove();
+	}
 }
 
 function generaterMouseOver(idParent) {
