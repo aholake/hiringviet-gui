@@ -1,3 +1,21 @@
+i {
+	margin-top: 3px;
+}
+
+.width-x1 {
+	width: 100%;
+}
+.color-white {
+	color: #fff;
+}
+
+.color-black {
+	color: #000;
+}
+
+.color-blue {
+	color: #1ba8e5;
+}
 
 .img-full {
 	width: 100%;
@@ -16,6 +34,11 @@
 	border: 2px solid #1cc117;
 }
 
+.p-m-0 {
+	margin: 0;
+	padding: 0;
+}
+
 .padding-right-0 {
 	padding-right: 0 !important;
 }
@@ -27,13 +50,42 @@
 .margin-top-5 {
 	margin-top: 5px;
 }
+.margin-tb-2 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
 .inline-flex {
 	display: inline-flex;
 }
 
+.display-inline-box {
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+
+}
+
+.edit-field-icon {
+	display: none;
+	position: relative;
+	width: 34px;
+	height: 34px;
+	margin: 0 5px;
+	text-align: center;
+	padding: 5px 0;
+	background: #DDDDDD;
+}
+
+.bg-edit {
+	background: #DDDDDD;
+}
+
+/* End css common */
+
 .company-header {
 	position: relative;
+	color: #000;
 }
 
 .company-header .cover-image {
@@ -46,6 +98,16 @@
 	background: #fff;
 }
 
+.company-header .cover-image .box-shadow-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-shadow: inset 17px -122px 204px 3px rgba(0,0,0,0.98);
+	-moz-box-shadow: inset 17px -122px 204px 3px rgba(0,0,0,0.98);
+	box-shadow: inset 17px -122px 204px 3px rgba(0,0,0,0.98);
+}
 
 .company-header .cover-image .update-cover-image {
 	position: absolute;
@@ -98,15 +160,19 @@
 	color: #eeeeee;
 }
 
-.company-header .company-name {
+.company-header .company-name, .company-header .profile-infor-header {
 	position: absolute;
 	bottom: 0px;
 	left: 190px;
+	max-width: 500px;
 	cursor: pointer;
 }
 
-.company-header .company-name h4 {
-	color: #fff;
+.company-header .profile-infor-header h5, .company-header .profile-infor-header h4 {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 900;
 }
 
 .company-menu {
@@ -160,4 +226,117 @@
 .company-content .company-content-left .company-infor {
 	display: inline-block;
 }
+
+/* begin skill endorse */
+.endorse-item {
+	height: 30px;
+	line-height: 30px;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+	margin-top: 5px;
+	position: relative;
+}
+
+.skill-pill {
+	display: block;
+	overflow: auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*background: #1ba8e5;*/
+}
+
+.skill-pill .endorse-count {
+	padding: 5px;
+	background: #1ba8e5;
+}
+
+.skill-pill .endorse-count .num-endorsements {
+	text-align: center;
+	color: white;
+	padding-left: 5px;
+}
+
+.skill-pill .endorse-item-name-text {
+	display: inline-flex;
+	padding: 0px 10px;
+	background: #fff;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+	box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+}
+.endorse-item .endorsing {
+	margin-left: 5px;
+}
+
+.endorse-item .endorsing span {
+	overflow: auto;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+	cursor: pointer;
+	padding: 0 5px;
+	border: 1px solid #fff;
+	display: none;
+}
+
+.endorse-item .endorsing span:hover {
+	border: 1px solid #CCCCCC;
+	border-style: dotted;
+}
+.endorse-item .endorsers-container {
+	position: absolute;
+	right: 0;
+	height: 30px;
+	line-height: 30px;
+}
+.endorse-item .endorsers-container .endorsers-pics {
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+}
+.endorse-item .endorsers-container .endorsers-action span {
+	display: block;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.endorse-item .endorsers-container .endorsers-pics li {
+	margin-left: 2px;
+}
+.endorse-item .endorsers-container .endorsers-pics img {
+	width: 30px;
+	height: 30px;
+}
+
+.compact-view {
+	width: 100%;
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+}
+
+.compact-view li {
+	display: -webkit-inline-box;
+	display: -moz-inline-box;
+	display: inline-box;
+}
+
+.endorsers-avatar {
+	position: relative;
+    -webkit-animation: mymove 1s 1; /* Chrome, Safari, Opera */
+    animation: mymove 1s 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: -20px;}
+    to {left: 0px;}
+}
+
+@keyframes mymove {
+    from {left: -20px;}
+    to {left: 0px;}
+}
+/* end skill endorse */
 
