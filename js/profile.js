@@ -13,6 +13,8 @@ function profileHoverListener() {
 	generateHoverListener('#profile-name-edit');
 
 	generateHoverListener('#profile-career-current-edit');
+
+	generateHoverListener(".ul-infor>li");
 }
 
 function profileAddCss() {
