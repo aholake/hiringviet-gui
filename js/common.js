@@ -1,4 +1,7 @@
 
+var MAX_TOTAL_ITEM_7 = 7;
+
+
 /* Close all dialog and navbar */
 function onClickToBody() {
 	$('#suggestion-box').hide();
@@ -83,9 +86,12 @@ function generateHoverListener(divWrap) {
 	var $profileCarrerCurrentEdit = $(divWrap);
 	$profileCarrerCurrentEdit.on('mouseover', function() {
 		$profileCarrerCurrentEdit.find('.edit-field-icon').show();
+		$profileCarrerCurrentEdit.find('.edit-field-icon i').addClass('color-white');
+		$profileCarrerCurrentEdit.css('cursor', 'pointer');
 	});
 
 	$profileCarrerCurrentEdit.on('mouseout', function() {
 		$profileCarrerCurrentEdit.find('.edit-field-icon').hide();
+		$profileCarrerCurrentEdit.find('.edit-field-icon i').removeClass('color-white');
 	});
 }
