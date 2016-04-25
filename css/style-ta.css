@@ -2,6 +2,18 @@ i {
 	margin-top: 3px;
 }
 
+.icon-24 {
+	width: 24px !important;
+	height: 24px !important;
+	padding: 0 !important;
+}
+
+.icon-50 {
+	width: 50px !important;
+	height: 50px !important;
+	padding: 0 !important;
+}
+
 .width-x1 {
 	width: 100%;
 }
@@ -35,8 +47,8 @@ i {
 }
 
 .p-m-0 {
-	margin: 0;
-	padding: 0;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .padding-right-0 {
@@ -48,7 +60,7 @@ i {
 }
 
 .margin-top-5 {
-	margin-top: 5px;
+	margin-top: 5px !important;
 }
 .margin-tb-2 {
 	margin-top: 2px;
@@ -75,6 +87,12 @@ i {
 	text-align: center;
 	padding: 5px 0;
 	background: #DDDDDD;
+	cursor: pointer;
+}
+
+.edit-field-icon:hover {
+	background: #1ba8e5;
+	color: white;
 }
 
 .bg-edit {
@@ -169,8 +187,8 @@ i {
 }
 
 .company-header .profile-infor-header h5, .company-header .profile-infor-header h4 {
-	height: 30px;
-	line-height: 30px;
+	height: 34px;
+	line-height: 34px;
 	text-align: center;
 	font-weight: 900;
 }
@@ -229,8 +247,8 @@ i {
 
 /* begin skill endorse */
 .endorse-item {
-	height: 30px;
-	line-height: 30px;
+	height: 28px;
+	line-height: 28px;
 	display: -webkit-inline-box;
 	display: -moz-inline-box;
 	display: inline-box;
@@ -239,17 +257,21 @@ i {
 }
 
 .skill-pill {
-	display: block;
+	display: -webkit-inline-box;
+	display: -moz-groupbox;
+	display: inline-box;
 	overflow: auto;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	/*background: #1ba8e5;*/
+	background: #1ba8e5;
 }
 
 .skill-pill .endorse-count {
 	padding: 5px;
 	background: #1ba8e5;
+	line-height: 30px;
+	height: 30px;
 }
 
 .skill-pill .endorse-count .num-endorsements {
@@ -265,6 +287,8 @@ i {
 	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
 	-moz-box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
 	box-shadow: inset 0px 0px 10px 0px rgba(166,164,166,1);
+	line-height: 30px;
+	height: 30px;
 }
 .endorse-item .endorsing {
 	margin-left: 5px;
@@ -313,7 +337,6 @@ i {
 .compact-view {
 	width: 100%;
 	display: -webkit-inline-box;
-	display: -moz-inline-box;
 	display: inline-box;
 }
 
@@ -325,18 +348,67 @@ i {
 
 .endorsers-avatar {
 	position: relative;
-    -webkit-animation: mymove 1s 1; /* Chrome, Safari, Opera */
-    animation: mymove 1s 1;
+	-webkit-animation: mymove 1s 1; /* Chrome, Safari, Opera */
+	animation: mymove 1s 1;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-    from {left: -20px;}
-    to {left: 0px;}
+	from {left: -20px;}
+	to {left: 0px;}
 }
 
 @keyframes mymove {
-    from {left: -20px;}
-    to {left: 0px;}
+	from {left: -20px;}
+	to {left: 0px;}
 }
 /* end skill endorse */
+
+/* begin resume */
+.ul-infor {
+
+}
+
+.ul-infor li {
+	display: flex;
+	margin: 10px 0;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.ul-infor span {
+	margin-right: 10px;
+}
+
+.ul-infor p {
+	line-height: 20px;
+	height: 20px;
+	padding-top: 6px;
+}
+.ul-infor img {
+	margin-right: 5px;
+}
+.resume-infor a {
+	font-size: 20px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.resume-infor  li {
+	margin: 0 !important;
+}
+
+.add-infor {
+	width: 100%;
+	border: 1px solid  #1ba8e5;
+	border-style: dotted;
+	padding: 5px;
+}
+
+.add-infor:hover {
+	background: #DDDDDD;
+}
+/* end resume */
 
