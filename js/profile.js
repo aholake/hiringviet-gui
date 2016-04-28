@@ -5,6 +5,10 @@ $(function() {
 	profileHoverListener();
 
 	profileOnClick();
+
+	$(document).ready(function() {
+		$('select').material_select();
+	});
 });
 
 function profileHoverListener() {
