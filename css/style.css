@@ -54,10 +54,10 @@ header #topnav {
 
 .margin-bottom-0 {
 	margin-bottom: 0 !important;
-};
+}
 
 .prefix-icon {
-	vertical-align: bottom;
+	vertical-align: bottom !important;
 	margin-right: 5px;
 }
 
@@ -320,4 +320,12 @@ hr.fancy-hr {
 
 .company-box .company-location {
 	margin: 5px 0;
+}
+
+/*--------------------------*/
+#company-suggestion-box {
+	height: 150px;
+	width: 100%;
+	overflow: auto;
+	background: #c2c2c2;
 }

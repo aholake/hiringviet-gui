@@ -1,0 +1,325 @@
+<html>
+<head>
+	<title>Home</title>
+
+	<meta charset="utf-8">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<!--Custom Style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--custom js-->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/tag-input.js"></script>
+
+	<!--JCarousel -->
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+	<!--Scroll to Fixed-->
+	<script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+
+	<!--Materialize Tag-->
+	<link rel="stylesheet" type="text/css" href="css/materialize-tags.min.css">
+	<script type="text/javascript" src="js/materialize-tags.min.js"></script>
+
+	<!--Typeahead -->
+	<script type="text/javascript" src="js/typeahead.bundle.js"></script>
+
+	<script type="text/javascript" src="js/post-job.js"></script>
+</head>
+<body onclick="onClickToBody()">
+	<header>
+		<div id="topnav">
+			<div class="left">
+				<img src="images/small_logo.png">
+			</div>
+			<div class="right">
+				<div id="search-bar">
+					<div id="search-input" class="left">
+						<input type="text" id="search-auto-complete" placeholder="Tìm kiếm công việc, công ty, người dùng,...">
+						<p class="search-hint">Từ khóa: Thông dịch viên, lập trình Java, lập trình PHP...</p>
+						<div id="suggestion-box" class="z-depth-1">
+							<div class="search-progress">
+								<img src="images/loading.gif" />
+								<p>Đang tìm kiếm kết quả</p>
+							</div>
+							<ul class="wrap-search-results">
+								
+							</ul>
+						</div>
+					</div>
+					<a id="search-btn" class="circle-btn left blue lighten-2 noselect">
+						<i class="material-icons white-text">search</i>
+					</a>
+
+					<div class="menu-group">
+						<a id="menu-btn" class="circle-btn red lighten-2 noselect">
+							<i class="material-icons white-text">menu</i>
+						</a>
+						<div id="dropdown-menu" class="z-depth-1">
+							<div>
+								<div id="profile">
+									<img src="images/profile_photo.jpg" class="circle profile-photo">
+									<h5><a href="#">Võ Tấn Lộc</a></h5>
+									<h6><a href="#">Thêm kỹ năng</a></h6>
+								</div>
+							</div>
+							<ul class="menu-item">
+								<li>
+									<div class="menu-item-header"><a href="#"><i class="material-icons prefix-icon">account_box</i>Hồ sơ cá nhân</a></div>
+									<div class="menu-item-body">
+										<ul>
+											<li><a href="#">Chỉnh sửa hồ sơ</a></li>
+											<li><a href="#">Người xem hồ sơ</a></li>
+											<li><a href="#">Nhật ký hoạt động</a></li>
+											<li><a href="#">Hòm thư</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header"><a href="#"><i class="material-icons prefix-icon">add_alert</i>Thông báo</a>
+										<div class="chip red lighten-2 white-text noti-count">5</div>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header"><a href="#"><i class="material-icons prefix-icon">donut_large</i>Theo dõi</a></div>
+									<div class="menu-item-body">
+										<ul>
+											<li><a href="#">Người đang theo dõi</a></li>
+											<li><a href="#">Công ty đang theo dõi</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header"><a href="#"><i class="material-icons prefix-icon">bookmark</i>Quản lý nghề nghiệp</a></div>
+									<div class="menu-item-body">
+										<ul>
+											<li><a href="#">Công việc đã lưu</a></li>
+											<li><a href="#">Công việc đề xuất</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item-header"><a href="#"><i class="material-icons prefix-icon">account_circle</i>Tài khoản</a></div>
+								</li>
+								<li>
+									<div class="menu-item-header"><a href="#"><i class="material-icons prefix-icon">exit_to_app</i>Thoát</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col m3">
+				<div class="card-panel">
+					<p class="center">ĐĂNG TUYỂN</p>
+					<hr class="fancy-hr"></hr>
+					<div class="job-index">
+						<ul>
+							<li><i class="material-icons prefix-icon">done</i> Thông tin công ty</li>
+							<li><i class="material-icons prefix-icon">done</i> Thông tin việc làm</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col m9">
+				<div class="card-panel">
+					<div id="company-info">
+						<form class="row">
+							<div class="input-field col s12">
+								<input class="validate" type="text" id="company_name"></input>
+								<label for="company_name">Company name: </label>
+							</div>
+							<div class="col s12" id="company-suggestion-box">
+
+							</div>
+							<div class="input-field col s12">
+								<input class="validate" type="file" id="company_logo">
+								<label for="company_logo"></label>
+							</div>
+							<div class="input-field col s12">
+								<input class="validate" type="text" id="company_add"></input>
+								<label for="company_add">Địa chỉ</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select id="company_district">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+								<label for="company_district">Quận/Huyện:</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select id="company_province">
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+								<label>Tỉnh/Thành phố</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+								</select>
+								<label>Năm thành lập</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+									<option>1990</option>
+								</select>
+								<label>Lĩnh vực</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option>Dưới 10</option>
+									<option>10-50</option>
+									<option>50-100</option>
+									<option>100-300</option>
+									<option>300-500</option>
+									<option>500-1000</option>
+									<option>Trên 1000</option>
+								</select>
+								<label>Quy mô nhân lực</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option>Việt Nam</option>
+									<option>Mỹ</option>
+									<option>Hàn Quốc</option>
+									<option>Nhật</option>
+									<option>Trung Quốc</option>
+									<option>Đài Loan</option>
+									<option>Khác</option>
+								</select>
+								<label>Quốc gia</label>
+							</div>
+							<div class="input-field col s12">
+								<textarea id="company-describe" class="materialize-textarea"></textarea>
+								<label for="company-describe">Mô tả sơ lược</label>
+							</div>
+						</form>
+						<div class="center">
+							<a id="continue_btn" href="#" class="btn waves-effect waves-light" onClick="goToJob();">Tiếp tục</a>
+						</div>
+					</div>
+
+					<div id="job-info">
+						<form class="row">
+							<div class="input-field col s12">
+								<input id="job_name" class="validate" type="text"></input>
+								<label>Tên công việc</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option></option>
+								</select>
+								<label>Nhóm ngành</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option></option>
+								</select>
+								<label>Vị trí/Chức danh</label>
+							</div>
+							<div class="col m12">
+								<fieldset>
+									<legend>Nơi làm việc</legend>
+									<div class="input-field col m6 s12">
+										<select>
+											<option value="" disabled selected>Choose your option</option>
+											<option>Dưới 10</option>
+											<option>10-50</option>
+											<option>50-100</option>
+											<option>100-300</option>
+											<option>300-500</option>
+											<option>500-1000</option>
+											<option>Trên 1000</option>
+										</select>
+										<label>Quận/Huyện</label>
+									</div>
+									<div class="input-field col m6 s12">
+										<select>
+											<option value="" disabled selected>Choose your option</option>
+											<option>Dưới 10</option>
+											<option>10-50</option>
+											<option>50-100</option>
+											<option>100-300</option>
+											<option>300-500</option>
+											<option>500-1000</option>
+											<option>Trên 1000</option>
+										</select>
+										<label>Tỉnh/Thành phố</label>
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="input-field col m6 s12">
+								<input id="job_salary" type="text" class="validate">
+								<label for="job_salary">Lương</label>
+							</div>
+							<div class="input-field col m6 s12">
+								<input id="job_invalidate" type="date" class="datepicker">
+								<label for="job_invalidate">Ngày hết hạn</label>
+							</div>
+							<div class="input-field col m12">
+								<input id="required-skills" type="text" value="Amsterdam,Washington" data-role="materialtags"/>
+								<label>Tag kỹ năng</label>
+							</div>
+							<div class="input-field col m12">
+								<textarea id="job-describe" class="materialize-textarea"></textarea>
+								<label for="job-describe">Công việc cụ thể</label>
+							</div>
+							<div class="input-field col m12">
+								<textarea id="job-describe" class="materialize-textarea"></textarea>
+								<label for="job-describe">Mô tả các yêu cầu</label>
+							</div>
+						</form>
+						<div class="center">
+							<a href="#" class="btn waves-effect waves-light" onClick="backToCompany();">Trở lại</a>
+							<a id="back_btn" href="#" class="btn waves-effect waves-light">Hoàn tất</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
