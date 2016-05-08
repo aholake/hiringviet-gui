@@ -17,6 +17,8 @@
 
 	<!--Custom Style-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
 	<!--custom js-->
 	<script type="text/javascript" src="js/script.js"></script>
@@ -32,9 +34,9 @@
 <body onclick="onClickToBody()">
 	<header>
 		<div id="topnav">
-			<div class="left">
-				<img src="images/small_logo.png">
-			</div>
+			<a href="#" class="navbar-logo left">
+				<img class="navbar-logo-img responsive-img" src="images/small_logo.png">
+			</a>
 			<div class="right">
 				<div id="search-bar">
 					<div id="search-input" class="left">
@@ -59,7 +61,29 @@
 							<i class="material-icons white-text">menu</i>
 						</a>
 						<div id="dropdown-menu" class="z-depth-1">
-							<div>
+							<div class="top-menu-box">
+								<div id="login-box">
+									<h1 class="title info center">Đăng nhập</h1>
+									<div class="rectangle-input">
+										<label for="email-login">
+											Email:
+										</label>
+										<input id="email-login" type="text" class="validate"></input>
+									</div>
+									<div class="rectangle-input">
+										<label for="email-login">
+											Password:
+										</label>
+										<input id="password-login" type="text" class="validate"></input>
+									</div>
+									<p>
+										<input type="checkbox" id="test5" />
+										<label for="test5">Ghi nhớ đăng nhập</label>
+									</p>
+									<div class="margin-top-10 center">
+										<a class="btn">Đăng nhập</a>
+									</div>
+								</div>
 								<div id="profile">
 									<img src="images/profile_photo.jpg" class="circle profile-photo">
 									<h5><a href="#">Võ Tấn Lộc</a></h5>
@@ -114,109 +138,247 @@
 			</div>
 		</div>
 	</header>
-	<div class="container">
+	
+	<div id="introduce-slider">
+
+	</div>
+
+	<div id="main-container">
 		<div class="row">
-			<div class="col m9">
-				<h4>Công việc nổi bật</h4>
-				<!-- JOB PANEL -->
-				<div id="job-list">
-					<div class="card-panel">
-						<div class="row">
-							<div class="col m9">
-								<h5 class="job-title">SENIOR JAVA DEVELOPER</h5>
-								<div class="row">
-									<div class="col m10 red-text"><a href="">Công ty phần mềm Global Cybersoft</a></div>
-									<div class="col m6">Chức vụ: Nhân viên</div>
-									<div class="col m6">Tân Bình | Hồ Chí Minh</div>
+			<div class="col m8">
+				<div class="card-panel">
+					<div class="panel-title">
+						Công việc nổi bật
+					</div>
+
+					<div class="panel-content">
+						<div class="job-box">
+							<div class="location-sticky">Hồ Chí Minh</div>
+							<div class="row none-margin-bottom">
+								<div class="col s3 center">
+									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
+									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
-								<div class="row">
-									<span class="col m12">
-										Triển khai các dự án của công ty (frontend-backend).Tham gia lấy yêu cầu, thiết kế, xây dựng, triển khai, quản trị. Chịu trách nhiệm về tiến độ và kết quả công việc được giao. Hoàn thiện bản thân về kỹ năng lập kế hoạch và quản lý nhóm....
-									</span>
-								</div>
-								<div class="row">
-									<span class="col m8">
-										<a href="#" class="chip">Java</a>
-										<a href="#" class="chip">English</a>
-										<a href="#" class="chip">MySQL</a>
-										<a href="#" class="chip">HTML</a>
-										<a href="#" class="chip">CSS</a>
-									</span>
-								</div>
-							</div>
-							<div class="col m3">
-								<div class="row center">
-									<span class="salary">500$-1000$</span>
-									<div class="logo-box">
-										<img class="responsive-img" src="images/small_logo.png">
+
+								<div class="col s9">
+									<h1 class="title">Tuyển 5 .NET Developer</h1>
+									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+
+									<div class="job-info">
+										<div class="row">
+											<div class="col m6 none-padding-left">
+												<p>Lương: 
+													<span class="info">Thỏa thuận</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Ngày đăng: 
+													<span class="info">20/12/2016</span>
+												</span>
+											</div>
+											<div class="col m6 none-padding-left">
+												<p>Chức vụ: 
+													<span class="info">Developer</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Số lượng: 
+													<span class="info">5 người</span>
+												</span>
+											</div>
+										</div>
+										<div class="row">
+											<p class="col m12 none-padding-left">
+												Xây dựng các ứng dụng trên Android cho các hệ thống tài chính, Ngân hàng.Nghiên cứu, tìm kiếm giải pháp...
+											</p>
+											<div class="col m12 none-padding-left">
+												<a class="chip">Java</a>
+												<a class="chip">ASP.NET</a>
+												<a class="chip">SQL</a>
+												<a class="chip">English</a>
+												<a class="chip">University</a>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="row center">
-									<span class="publish-date">20/10/2012</span>
-									<span class="view-count">2034</span>
-								</div>
-								<div class="row center">
-									<a href="#"><i class="material-icons prefix-icon orange-text">bookmark</i>Lưu vào yêu thích</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="card-panel">
-						<div class="row">
-							<div class="col m9">
-								<h5 class="job-title">SENIOR JAVA DEVELOPER</h5>
-								<div class="row">
-									<div class="col m10 red-text"><a href="">Công ty phần mềm Global Cybersoft</a></div>
-									<div class="col m6">Chức vụ: Nhân viên</div>
-									<div class="col m6">Tân Bình | Hồ Chí Minh</div>
+
+					<div class="panel-content">
+						<div class="job-box">
+							<div class="location-sticky">Hồ Chí Minh</div>
+							<div class="row none-margin-bottom">
+								<div class="col s3 center">
+									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
+									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
-								<div class="row">
-									<span class="col m12">
-										Triển khai các dự án của công ty (frontend-backend).Tham gia lấy yêu cầu, thiết kế, xây dựng, triển khai, quản trị. Chịu trách nhiệm về tiến độ và kết quả công việc được giao. Hoàn thiện bản thân về kỹ năng lập kế hoạch và quản lý nhóm....
-									</span>
-								</div>
-								<div class="row">
-									<span class="col m8">
-										<a href="#" class="chip">Java</a>
-										<a href="#" class="chip">English</a>
-										<a href="#" class="chip">MySQL</a>
-										<a href="#" class="chip">HTML</a>
-										<a href="#" class="chip">CSS</a>
-									</span>
-								</div>
-							</div>
-							<div class="col m3">
-								<div class="row center">
-									<span class="salary">500$-1000$</span>
-									<div class="logo-box">
-										<img class="responsive-img" src="images/small_logo.png">
+
+								<div class="col s9">
+									<h1 class="title">Tuyển 5 .NET Developer</h1>
+									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+
+									<div class="job-info">
+										<div class="row">
+											<div class="col m6 none-padding-left">
+												<p>Lương: 
+													<span class="info">Thỏa thuận</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Ngày đăng: 
+													<span class="info">20/12/2016</span>
+												</span>
+											</div>
+											<div class="col m6 none-padding-left">
+												<p>Chức vụ: 
+													<span class="info">Developer</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Số lượng: 
+													<span class="info">5 người</span>
+												</span>
+											</div>
+										</div>
+										<div class="row">
+											<p class="col m12 none-padding-left">
+												Xây dựng các ứng dụng trên Android cho các hệ thống tài chính, Ngân hàng.Nghiên cứu, tìm kiếm giải pháp...
+											</p>
+											<div class="col m12 none-padding-left">
+												<a class="chip">Java</a>
+												<a class="chip">ASP.NET</a>
+												<a class="chip">SQL</a>
+												<a class="chip">English</a>
+												<a class="chip">University</a>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="row center">
-									<span class="publish-date">20/10/2012</span>
-									<span class="view-count">2034</span>
-								</div>
-								<div class="row center">
-									<a href="#"><i class="material-icons prefix-icon orange-text">bookmark</i>Lưu vào yêu thích</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="center">
-					<a class="btn waves-effect waves-light">Nhiều công việc hơn</a>
+
+					<div class="panel-content">
+						<div class="job-box">
+							<div class="location-sticky">Hồ Chí Minh</div>
+							<div class="row none-margin-bottom">
+								<div class="col s3 center">
+									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
+									<a href="#" class="btn wave-effect wave-light">Follow</a>
+								</div>
+
+								<div class="col s9">
+									<h1 class="title">Tuyển 5 .NET Developer</h1>
+									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+
+									<div class="job-info">
+										<div class="row">
+											<div class="col m6 none-padding-left">
+												<p>Lương: 
+													<span class="info">Thỏa thuận</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Ngày đăng: 
+													<span class="info">20/12/2016</span>
+												</span>
+											</div>
+											<div class="col m6 none-padding-left">
+												<p>Chức vụ: 
+													<span class="info">Developer</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Số lượng: 
+													<span class="info">5 người</span>
+												</span>
+											</div>
+										</div>
+										<div class="row">
+											<p class="col m12 none-padding-left">
+												Xây dựng các ứng dụng trên Android cho các hệ thống tài chính, Ngân hàng.Nghiên cứu, tìm kiếm giải pháp...
+											</p>
+											<div class="col m12 none-padding-left">
+												<a class="chip">Java</a>
+												<a class="chip">ASP.NET</a>
+												<a class="chip">SQL</a>
+												<a class="chip">English</a>
+												<a class="chip">University</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel-content">
+						<div class="job-box">
+							<div class="location-sticky">Hồ Chí Minh</div>
+							<div class="row none-margin-bottom">
+								<div class="col s3 center">
+									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
+									<a href="#" class="btn wave-effect wave-light">Follow</a>
+								</div>
+
+								<div class="col s9">
+									<h1 class="title">Tuyển 5 .NET Developer</h1>
+									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+
+									<div class="job-info">
+										<div class="row">
+											<div class="col m6 none-padding-left">
+												<p>Lương: 
+													<span class="info">Thỏa thuận</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Ngày đăng: 
+													<span class="info">20/12/2016</span>
+												</span>
+											</div>
+											<div class="col m6 none-padding-left">
+												<p>Chức vụ: 
+													<span class="info">Developer</span>
+												</p>
+											</div>
+											<div class="col m6 none-padding-left">
+												<span class="right">Số lượng: 
+													<span class="info">5 người</span>
+												</span>
+											</div>
+										</div>
+										<div class="row">
+											<p class="col m12 none-padding-left">
+												Xây dựng các ứng dụng trên Android cho các hệ thống tài chính, Ngân hàng.Nghiên cứu, tìm kiếm giải pháp...
+											</p>
+											<div class="col m12 none-padding-left">
+												<a class="chip">Java</a>
+												<a class="chip">ASP.NET</a>
+												<a class="chip">SQL</a>
+												<a class="chip">English</a>
+												<a class="chip">University</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
-			<div class="col m3">
-				<div id="top-company" class="card-panel center">
-					<h5>Nhà Tuyển Dụng</h5>
-					<img src="images/carousel/1.png" class="company-logo responsive-img">
-					<img src="images/carousel/2.png" class="company-logo responsive-img">
-					<img src="images/carousel/3.png" class="company-logo responsive-img">
-					<img src="images/carousel/4.png" class="company-logo responsive-img">
-					<img src="images/carousel/6.png" class="company-logo responsive-img">
+			<div class="col m4">
+				<div class="card-panel">
+					<div class="panel-title">
+						Công ty nổi bật
+					</div>
+					<div class="panel-content">
+
+					</div>
 				</div>
-			</div>
+			</div>		
 		</div>
 	</div>
 </body>
