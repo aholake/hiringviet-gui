@@ -2,23 +2,32 @@
 var MAX_TOTAL_ITEM_7 = 7;
 
 
-/* Close all dialog and navbar */
-function onClickToBody() {
-	$('#suggestion-box').hide();
-}
-
 
 $(function() {
-	$('.carousel').carousel();/* Enable Carousel */
-	$("#top-company").scrollToFixed();
+	/* Close all dialog and navbar */
+	$("body").click(function() {
+		$('#suggestion-box').hide();
+	});
+	/*
+	* Show dropdown-menu
+	*/
+	$('#menu-btn').click(function() {
+		$('#dropdown-menu').toggle();
+	});
 
-	addCommonCss();
+	$(".menu-item-header").click(function() {
+		$(this).next().toggle();
+	});
 
-	/* Add event on click */
-	addCLickListener();
+	// Enable materialize select 
+	$('select').material_select();
 
-});
-
+	// initialize datepicker
+	$("#job_invalidate").pickadate({
+		selectMonths: true,
+		selectYears: 15
+	});
+})
 
 function addCLickListener() {
 

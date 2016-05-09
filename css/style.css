@@ -103,3 +103,11 @@ h1.title {
 .warning {
 	color: #e5760d;
 }
+
+#footer {
+	height: 50px;
+	background: #02A8F3;
+	color: #FFF;
+	text-align: center;
+	line-height: 50px;
+}
