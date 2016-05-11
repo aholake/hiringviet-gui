@@ -11,13 +11,23 @@ $(function() {
 	/*
 	* Show dropdown-menu
 	*/
-	$('#menu-btn').click(function() {
-		$('#dropdown-menu').toggle();
-	});
+	// toggle profile box
+	$("body").click(function(e) {
+		console.log(e.target.id);
+		if(e.target.id == "menu-btn" || $(e.target).closest("#menu-btn").length){
+			$("#dropdown-menu").toggle();
+   			//console.log("1");
+   		}
+   		else if( e.target.id == "dropdown-menu" || $(e.target).closest("#dropdown-menu").length) {
+   			$("#dropdown-menu").show();
+   			//console.log("2");
+   		}else{
+   			$("#dropdown-menu").hide();
+   			//console.log("3");
+   		}
+   	});
 
-	$(".menu-item-header").click(function() {
-		$(this).next().toggle();
-	});
+
 
 	// Enable materialize select 
 	$('select').material_select();
