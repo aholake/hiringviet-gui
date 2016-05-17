@@ -20,6 +20,10 @@
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
+
+	<!-- CSS media query on a link element -->
+	<link rel="stylesheet" media="(max-width: 700px)" href="css/smart.css" />
+
 	<!--custom js-->
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
@@ -30,6 +34,17 @@
 	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 </head>
 <body>
+	<nav>
+		<ul id="slide-out" class="side-nav">
+			<li class="mobile-search center">
+				<input type="text" placeholder="Tìm kiếm công việc, công ty, người dùng,...">
+				<a href="#" class="btn">Tìm kiếm</a>
+			</li>
+			<li><a href="#!">Đăng nhập</a></li>
+			<li><a href="#!">Đăng ký</a></li>
+		</ul>
+		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+	</nav>
 	<header>
 		<div id="topnav">
 			<a href="#" class="navbar-logo left">
@@ -143,7 +158,7 @@
 
 	<div id="main-container">
 		<div class="row">
-			<div class="col m8">
+			<div class="col m8 no-padding-on-med-and-down">
 				<div class="card-panel">
 					<div class="panel-title">
 						Công việc nổi bật
@@ -153,14 +168,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -204,14 +220,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -255,14 +272,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -306,14 +324,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -357,14 +376,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -408,14 +428,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -459,14 +480,15 @@
 						<div class="job-box">
 							<div class="location-sticky">Hồ Chí Minh</div>
 							<div class="row none-margin-bottom">
-								<div class="col s3 center">
+								<div class="col m3 center hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="responsive-img company-logo">
 									<a href="#" class="btn wave-effect wave-light">Follow</a>
 								</div>
 
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Tuyển 5 .NET Developer</h1>
 									<a href="#" class="company-name">Công ty cổ phần HP Computer</a>
+									<p class="work-location"><a href="#">Hồ Chí Minh</a></p>
 
 									<div class="job-info">
 										<div class="row">
@@ -521,7 +543,7 @@
 								Theo dõi
 							</a>
 							<div class="row">
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Công ty Tân Hiệp phát</h1>
 									<div class="small-text">
 										<p class="col s12 none-padding-left">
@@ -542,7 +564,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col s3">
+								<div class="col m3 hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="right responsive-img">
 								</div>
 							</div>
@@ -552,7 +574,7 @@
 								Theo dõi
 							</a>
 							<div class="row">
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Công ty Tân Hiệp phát</h1>
 									<div class="small-text">
 										<p class="col s12 none-padding-left">
@@ -573,7 +595,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col s3">
+								<div class="col m3 hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="right responsive-img">
 								</div>
 							</div>
@@ -583,7 +605,7 @@
 								Theo dõi
 							</a>
 							<div class="row">
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Công ty Tân Hiệp phát</h1>
 									<div class="small-text">
 										<p class="col s12 none-padding-left">
@@ -604,7 +626,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col s3">
+								<div class="col m3 hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="right responsive-img">
 								</div>
 							</div>
@@ -614,7 +636,7 @@
 								Theo dõi
 							</a>
 							<div class="row">
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Công ty Tân Hiệp phát</h1>
 									<div class="small-text">
 										<p class="col s12 none-padding-left">
@@ -635,7 +657,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col s3">
+								<div class="col m3 hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="right responsive-img">
 								</div>
 							</div>
@@ -645,7 +667,7 @@
 								Theo dõi
 							</a>
 							<div class="row">
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Công ty Tân Hiệp phát</h1>
 									<div class="small-text">
 										<p class="col s12 none-padding-left">
@@ -666,7 +688,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col s3">
+								<div class="col m3 hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="right responsive-img">
 								</div>
 							</div>
@@ -676,7 +698,7 @@
 								Theo dõi
 							</a>
 							<div class="row">
-								<div class="col s9">
+								<div class="col m9">
 									<h1 class="title">Công ty Tân Hiệp phát</h1>
 									<div class="small-text">
 										<p class="col s12 none-padding-left">
@@ -697,7 +719,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col s3">
+								<div class="col m3 hide-on-med-and-down">
 									<img src="images/Hewlett-Packard-Logo-200x200.png" class="right responsive-img">
 								</div>
 							</div>

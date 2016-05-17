@@ -1,0 +1,32 @@
+@media screen and (max-width: 760px) {
+	header {
+		display: none;
+	}
+	nav {
+		display: block !important;
+	}
+	#introduce-slider {
+		display: none !important;
+	}
+
+	.location-sticky {
+		display: none;
+	}
+
+	#main-container {
+		margin: 0;
+		width: 100%;
+	}
+
+	.no-padding-on-med-and-down {
+		padding: 0 !important;
+	}
+
+	.work-location {
+		display: block;
+	}
+
+	.mobile-search {
+		margin: 5px 5px;
+	}
+}
